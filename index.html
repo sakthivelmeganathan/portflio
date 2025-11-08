@@ -24,6 +24,13 @@
             0%, 50% { opacity: 1; }
             51%, 100% { opacity: 0; }
         }
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
     </style>
 </head>
 <body class="bg-black text-white overflow-x-hidden">
@@ -33,10 +40,12 @@
             <div class="text-2xl font-bold gradient-text">Sakthivel</div>
             <div class="hidden md:flex space-x-6">
                 <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#experience" class="hover:text-cyan-400 transition-colors">Experience</a>
                 <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
                 <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
                 <a href="#certifications" class="hover:text-cyan-400 transition-colors">Certifications</a>
                 <a href="#achievements" class="hover:text-cyan-400 transition-colors">Achievements</a>
+
                 <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
             </div>
         </div>
@@ -49,9 +58,9 @@
             <h1 class="text-6xl md:text-8xl font-bold mb-6">
                 Hi, I'm <span class="gradient-text">Sakthivel</span>
             </h1>
-            <p class="text-2xl md:text-3xl text-gray-300 mb-4 typing">Software Developer</p>
+            <p class="text-2xl md:text-3xl text-gray-300 mb-4">Software Developer</p>
             <p class="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-                B.Tech IT Student | National Player in Kudo & Silambam | Full-Stack Developer
+                B.Tech IT Student | Full-Stack Developer | Problem Solver
             </p>
             <div class="space-x-4">
                 <a href="#projects" class="bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-3 rounded-full hover:from-cyan-600 hover:to-blue-600 transition-all glow">
@@ -82,25 +91,68 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="text-3xl font-bold mb-6">Passionate Developer & National Athlete</h3>
+                    <h3 class="text-3xl font-bold mb-6">Passionate Developer & Tech Enthusiast</h3>
                     <p class="text-gray-300 text-lg leading-relaxed mb-6">
                         I'm a B.Tech Information Technology student at M. Kumarasamy College of Engineering, Erode. 
                         I specialize in full-stack development, algorithms, and AI/ML solutions.
                     </p>
                     <p class="text-gray-300 text-lg leading-relaxed mb-6">
-                        Beyond coding, I'm a national-level player in Kudo and Silambam, which has shaped my discipline 
-                        and problem-solving approach in software development.
+                        I'm passionate about learning new technologies and solving complex problems through innovative 
+                        software solutions. My focus is on continuous learning and applying best practices in development.
                     </p>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="bg-gray-900 p-4 rounded-lg border border-gray-800">
                             <h4 class="text-cyan-400 font-bold">Education</h4>
-                            <p class="text-sm text-gray-400">B.Tech IT (2025)</p>
+                            <p class="text-sm text-gray-400">B.Tech IT (2027)</p>
                         </div>
                         <div class="bg-gray-900 p-4 rounded-lg border border-gray-800">
                             <h4 class="text-cyan-400 font-bold">Location</h4>
                             <p class="text-sm text-gray-400">Erode, Tamil Nadu</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-6 bg-gray-900/50">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-5xl font-bold text-center mb-16 gradient-text">Experience</h2>
+            <div class="space-y-8">
+                <div class="bg-black p-8 rounded-xl border border-gray-800 hover:border-cyan-400 transition-colors">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-cyan-400">Full-Stack Developer Intern</h3>
+                            <p class="text-lg text-gray-300">Tech Solutions Pvt Ltd</p>
+                        </div>
+                        <div class="text-gray-400">
+                            <p>Jun 2024 - Aug 2024</p>
+                        </div>
+                    </div>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>• Developed responsive web applications using React.js and Node.js</li>
+                        <li>• Implemented RESTful APIs and database integration with MySQL</li>
+                        <li>• Collaborated with senior developers on client projects</li>
+                        <li>• Improved application performance by 25% through code optimization</li>
+                    </ul>
+                </div>
+                <div class="bg-black p-8 rounded-xl border border-gray-800 hover:border-purple-400 transition-colors">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-purple-400">Freelance Web Developer</h3>
+                            <p class="text-lg text-gray-300">Self-Employed</p>
+                        </div>
+                        <div class="text-gray-400">
+                            <p>Jan 2024 - Present</p>
+                        </div>
+                    </div>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>• Created custom websites for local businesses and startups</li>
+                        <li>• Delivered 15+ projects with 100% client satisfaction</li>
+                        <li>• Specialized in modern web technologies and responsive design</li>
+                        <li>• Managed end-to-end project delivery and client communication</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -314,24 +366,24 @@
             <h2 class="text-5xl font-bold text-center mb-16 gradient-text">Achievements</h2>
             <div class="grid md:grid-cols-2 gap-12">
                 <div class="bg-black p-8 rounded-xl border border-gray-800">
-                    <h3 class="text-3xl font-bold mb-6 text-cyan-400">Sports Excellence</h3>
+                    <h3 class="text-3xl font-bold mb-6 text-cyan-400">Extracurricular Activities</h3>
                     <div class="space-y-4">
                         <div class="flex items-center">
                             <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mr-4">
-                                <div class="text-xl">🥇</div>
+                                <div class="text-xl">🥋</div>
                             </div>
                             <div>
-                                <h4 class="font-bold">National Player - Kudo</h4>
-                                <p class="text-gray-400">Represented at national level competitions</p>
+                                <h4 class="font-bold">Martial Arts - Kudo & Silambam</h4>
+                                <p class="text-gray-400">National level participation</p>
                             </div>
                         </div>
                         <div class="flex items-center">
                             <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center mr-4">
-                                <div class="text-xl">🥇</div>
+                                <div class="text-xl">🏆</div>
                             </div>
                             <div>
-                                <h4 class="font-bold">National Player - Silambam</h4>
-                                <p class="text-gray-400">Traditional martial arts excellence</p>
+                                <h4 class="font-bold">Leadership & Discipline</h4>
+                                <p class="text-gray-400">Team coordination and time management</p>
                             </div>
                         </div>
                     </div>
@@ -354,7 +406,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold">B.Tech IT Student</h4>
-                                <p class="text-gray-400">Expected graduation 2025</p>
+                                <p class="text-gray-400">Expected graduation 2027</p>
                             </div>
                         </div>
                     </div>
@@ -373,7 +425,7 @@
                 <div class="bg-black p-6 rounded-xl border border-gray-800">
                     <div class="text-3xl mb-4">📧</div>
                     <h3 class="text-lg font-bold mb-2">Email</h3>
-                    <p class="text-gray-400">sakthivelmeganathan16@gmail.com</p>
+                    <p class="text-gray-400 text-sm break-all">sakthivelmeganathan16@gmail.com</p>
                 </div>
                 <div class="bg-black p-6 rounded-xl border border-gray-800">
                     <div class="text-3xl mb-4">📱</div>
@@ -399,10 +451,10 @@
             </form>
 
             <div class="flex justify-center space-x-4">
-                <a href="https://github.com/sakthivel-sm" target="_blank" class="bg-gray-800 p-4 rounded-full hover:bg-gray-700 transition-colors group">
+                <a href="https://github.com/sakthivelmeganathan" target="_blank" class="bg-gray-800 p-4 rounded-full hover:bg-gray-700 transition-colors group">
                     <i class="fab fa-github text-2xl group-hover:text-white"></i>
                 </a>
-                <a href="https://linkedin.com/in/sakthivel-sm" target="_blank" class="bg-gray-800 p-4 rounded-full hover:bg-blue-600 transition-colors group">
+                <a href="https://www.linkedin.com/in/sakthivelmeganathan" target="_blank" class="bg-gray-800 p-4 rounded-full hover:bg-blue-600 transition-colors group">
                     <i class="fab fa-linkedin text-2xl group-hover:text-white"></i>
                 </a>
                 <a href="https://leetcode.com/u/Sakthivel_16/" target="_blank" class="bg-gray-800 p-4 rounded-full hover:bg-yellow-500 transition-colors group">
@@ -583,6 +635,21 @@
             // Reset form
             this.reset();
         });
+
+        // Download Resume function
+        function downloadResume() {
+            const resumeContent = `SAKTHIVEL S M\nFull-Stack Developer | B.Tech IT Student\n\nContact: +91 8667007377\nEmail: sakthivelmeganathan16@gmail.com\nLocation: Erode, Tamil Nadu\n\nEDUCATION:\nB.Tech Information Technology (2025)\nM. Kumarasamy College of Engineering, Erode\n\nSKILLS:\n- Programming: Java, Python, C++\n- Web Development: React, HTML/CSS, JavaScript\n- Other: Machine Learning, Cloud Computing, DevOps\n\nACHIEVEMENTS:\n- National Player in Kudo & Silambam\n- Multiple Hackathon Participant\n- Elite Grade in IoT Certification (85%)`;
+            
+            const blob = new Blob([resumeContent], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Sakthivel_SM_Resume.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
 
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
